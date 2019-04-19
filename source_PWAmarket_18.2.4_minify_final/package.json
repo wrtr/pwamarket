@@ -1,0 +1,29 @@
+{
+  "name": "pwamarket",
+  "version": "1.0.0",
+  "description": "Build PWAmarket Progressive Web App.",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1",
+    "wizard": "workbox wizard",
+    "generate-sw": "workbox injectManifest",
+    "minify": "uglifyjs public/src/js/app.js -o public/src/js/app.min.js --compress --mangle && uglifyjs public/src/js/feed.js -o public/src/js/feed.min.js --compress --mangle && uglifyjs public/src/js/fetch.js -o public/src/js/fetch.min.js --compress --mangle && uglifyjs public/src/js/idb.js -o public/src/js/idb.min.js --compress --mangle && uglifyjs public/src/js/promise.js -o public/src/js/promise.min.js --compress --mangle && uglifyjs public/src/js/utility.js -o public/src/js/utility.min.js --compress --mangle",
+    "build": "npm run minify && npm run generate-sw"
+  },
+  "keywords": [
+    "pwa",
+    "progressive",
+    "web",
+    "app",
+    "market"
+  ],
+  "author": "PWAmarket builder",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "uglify-js": "^3.4.9"
+  },
+  "dependencies": {
+    "workbox-cli": "^4.0.0-rc.3"
+  }
+}

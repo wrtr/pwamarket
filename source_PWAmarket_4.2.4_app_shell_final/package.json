@@ -1,0 +1,21 @@
+{
+  "name": "pwamarket",
+  "version": "1.0.0",
+  "description": "Build PWAmarket Progressive Web App.",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1"
+  },
+  "keywords": [
+    "pwa",
+    "progressive",
+    "web",
+    "app",
+    "market"
+  ],
+  "author": "PWAmarket builder",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}

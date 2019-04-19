@@ -1,0 +1,48 @@
+/* public-src-css-feed.css */
+
+#create-post {
+  z-index: 1001;
+  position: fixed;
+  width: 100%;
+  min-height: calc(100vh-56px);
+  overflow-y: scroll;
+  bottom: 0;
+  top: 56px;
+  background: white;
+  text-align: center;
+  /* display: none; */
+  transform: translateY(100vh);
+  transition: transform 1.2s;
+}
+
+.main-image {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.floating-button {
+  z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  left: calc(50vw - 32px);
+  padding-bottom: 30px;
+}
+
+.input-section {
+  display: block;
+  margin: 10px auto;
+}
+
+.items-area-card.mdl-card {
+  flex: 45%;
+  margin: 10px;
+  padding: 5px;
+  border: 5px solid #d5f4e6;
+}
+
+#items-area {
+  border: 5px solid #80ced6;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
